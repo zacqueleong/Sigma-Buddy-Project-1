@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/75b98c63ae.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Zacque's Section -->
+    <header class="hero">
+      <h1 class="hero__title">VISUAL IMPACT.</h1>
+      <p class="hero__subtitle">YOURS, NEXT.</p>
+      <video class="hero__video" src="./assets/hero-video.mp4" type="video/mp4" autoplay muted loop></video>
+
+      <nav class="nav">
+        <!-- Clickable logo, to return to top -->
+        <a href="#top">
+          <img class="nav__logo" src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/logo_lite.png" alt="Logo Picture" />
+        </a>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#works" class="nav__link">Works</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item"><a href="#team" class="nav__link">Team</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="#blog" class="nav__link">Blog</a>
+            <ul class="nav__dropdown">
+              <li><a href="#">Submenu Item 1</a></li>
+              <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Zacque's Section -->
+
+      <!-- Go to Top Button , onclick run topFunction() JS code -->
+      <button onclick="topFunction()" id="goTopBtn" title="Go to Top">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+
+      <section id="about">
+        <div class="about about--primary">
+          <div class="about__container">
+            <h2 class="about__title">Who We Are</h2>
+            <p class="about__description">Nullam placerat dignissim metus, eu ornare orci convallis vitae. Suspendisse eget sem in magna auctor eleifend. Pellentesque diam scelerisque erat vel arcu blandit, vel ultricies libero vehicula. Ut.Aenean fermentum nisi eu arcu dictum scelerisque. Phasellus nec tincidunt ante. Nulla finibus, enim vitae tempor pretium, ex magna ornare ligula, a varius est nulla id turpis.</p>
+          </div>
+          <img class="about__image" src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/mockup_1.png" alt="About Pic 1" />
+        </div>
+
+        <div class="about about--secondary about--reverse">
+          <div class="about__container">
+            <h2 class="about__title">What We Do</h2>
+            <p class="about__description">Nullam placerat dignissim metus, eu ornare orci convallis vitae. Suspendisse eget sem in magna auctor eleifend. Pellentesque diam scelerisque erat vel arcu blandit, vel ultricies libero vehicula. Ut.Aenean fermentum nisi eu arcu dictum scelerisque. Phasellus nec tincidunt ante. Nulla finibus, enim vitae tempor pretium, ex magna ornare ligula, a varius est nulla id turpis.</p>
+          </div>
+          <img class="about__image" src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/mockup_2.png" alt="About Pic 2" />
+        </div>
+      </section>
+
+      <!-- Sam's Section -->
+      <section id="works">
+        <div class="container">
+          <div class="section-heading">
+            <h1 class="heading-strike">Works</h1>
+            <p class="additional-heading">
+              Donec a lacinia mauris. Aliquam <br />
+              sodales auctor<br />
+              tempor vestibulum.
+            </p>
+          </div>
+        </div>
+
+        <div class="filter">
+          <ul>
+            <li><a class="active" href="#all" title="">All</a></li>
+            <li><a class="active" href="#advertise" title="">Advertise</a></li>
+            <li><a class="active" href="#branding" title="">Branding</a></li>
+            <li><a class="active" href="#print" title="">Print</a></li>
+          </ul>
+        </div>
+
+        <div class="top-row-wrapper">
+          <div class="portfolio-post portfolio-thumbnail">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/thumbnail_1.jpg" alt="Le Chat" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>
+                  <a href="http://demo.agnidesigns.com/candy/?portfolio=le-chat">Le Chat</a>
+                </h3>
+                <div class="portfolio-details">
+                  <ul class="portfolio-category">
+                    <li>Branding</li>
+                    <li>Print</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-post portfolio-thumbnail">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/thumbnail_2.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>
+                  <a href="http://demo.agnidesigns.com/candy/?portfolio=willow-tree">Willow Tree</a>
+                </h3>
+                <div class="portfolio-details">
+                  <ul class="portfolio-category">
+                    <li>Advertise</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-post portfolio-thumbnail">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/thumbnail_8.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>
+                  <a href="http://demo.agnidesigns.com/candy/?portfolio=print-design">Print Design</a>
+                </h3>
+                <div class="portfolio-details">
+                  <ul class="portfolio-category">
+                    <li>Branding</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-row-wrapper">
+          <div class="portfolio-post portfolio-thumbnail">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/thumbnail_3.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>
+                  <a href="http://demo.agnidesigns.com/candy/">Brand Ident</a>
+                </h3>
+                <div class="portfolio-details">
+                  <ul class="portfolio-category">
+                    <li>Advertise</li>
+                    <li>Print</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-post portfolio-thumbnail">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/thumbnail_5.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>
+                  <a href="http://demo.agnidesigns.com/candy/?portfolio=logo-design">Logo Design</a>
+                </h3>
+                <div class="portfolio-details">
+                  <ul class="portfolio-category">
+                    <li>Print</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-post portfolio-thumbnail">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/thumbnail_6.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>
+                  <a href="http://demo.agnidesigns.com/candy/?portfolio=print-template">Print Template</a>
+                </h3>
+                <div class="portfolio-details">
+                  <ul class="portfolio-category">
+                    <li>Branding</li>
+                    <li>Print</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-post portfolio-thumbnail">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/thumbnail_9.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>
+                  <a href="http://demo.agnidesigns.com/candy/?portfolio=corporate-idents">Corporate Ident</a>
+                </h3>
+                <div class="portfolio-details">
+                  <ul class="portfolio-category">
+                    <li>Branding</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="new class">
+          <p class="additional-heading heading-underlined">Aliquam sodales auctor</p>
+          <h4 class="margin-bottom-40">Candy, Creative digital agency</h4>
+          <a class="btn btn-alt btn-default primary-typo" href="#">BUY NOW</a>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-heading"></div>
+          <h1 class="heading-strike">Services</h1>
+          <p class="additional-heading">Donec a lacinia mauris. Aliquam sodales auctor tempor vestibulum.</p>
+        </div>
+
+        <div class="flex-container">
+          <div class="top-row-wrapper">
+            <div class="service">
+              <i class="ion-ios-bolt-outline medium-icon" style="font-size: 100px"></i><br />
+              <h5 class="heading heading-underlined">Graphic Design</h5>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus. Aliquam ullamcorper.</p>
+            </div>
+
+            <div class="service">
+              <i class="ion-ios-eye-outline medium-icon" style="font-size: 100px"></i><br />
+              <h5 class="heading heading-underlined">Production</h5>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus. Aliquam ullamcorper.</p>
+            </div>
+
+            <div class="service">
+              <i class="ion-ios-glasses-outline medium-icon" style="font-size: 100px"></i><br />
+              <h5 class="heading heading-underlined">Web Design</h5>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus. Aliquam ullamcorper.</p>
+            </div>
+          </div>
+
+          <div class="bottom-row-wrapper">
+            <div class="service">
+              <i class="ion-ios-gear-outline medium-icon" style="font-size: 100px"></i><br />
+              <h5 class="heading heading-underlined">Development</h5>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus. Aliquam ullamcorper.</p>
+            </div>
+
+            <div class="service">
+              <i class="ion-ios-barcode-outline medium-icon" style="font-size: 100px"></i><br />
+              <h5 class="heading heading-underlined">Coding</h5>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus. Aliquam ullamcorper.</p>
+            </div>
+
+            <div class="service">
+              <i class="ion-ios-barcode-outline medium-icon" style="font-size: 100px"></i><br />
+              <h5 class="heading heading-underlined">SEO ANALYSIS</h5>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus. Aliquam ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-wrapper">
+          <div class="overlay">
+            <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/player_fallback.jpg" alt="Fallback image" />
+          </div>
+          <iframe class="video-frame" height="400" src="https://www.youtube.com/embed/WSCzFQo4JgE"></iframe>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="container">
+          <h2 class="heading heading-underlined">Our Team</h2>
+          <p class="additional-heading">Aliquam sodales auctor tempor vestibul.</p>
+        </div>
+
+        <div class="container2">
+          <div class="member">
+            <div class="image">
+              <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/member_2.jpg" alt="John Doe" />
+              <div class="caption">
+                <h5 class="member-title-text heading heading-underlined">John Doe</h5>
+                <p>Team Lead</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="image">
+              <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/member_1.jpg" alt="Kenway" />
+              <div class="caption">
+                <h5 class="member-title-text heading heading-underlined">Kenway</h5>
+                <p>UI/UX Designer</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="image">
+              <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/member_2.jpg" alt="John Doe" />
+              <div class="caption">
+                <h5 class="member-title-text heading heading-underlined">John Doe</h5>
+                <br />
+                <p>Designer &amp; Developer</p>
+                <br />
+                <p>
+                  Cum sociis natoque penatibus et <br />magnis dis parturient montes,<br />
+                  nascetur mus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="image">
+              <img src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/member_1.jpg" alt="Williams" />
+              <div class="caption">
+                <h5 class="member-title-text heading heading-underlined">Williams</h5>
+                <p>Creative Director</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Angie's Section -->
+      <section id="blog">
+        <div class="blog__container">
+          <h2 class="blog__title">OUR BLOG</h2>
+          <hr class="blog__titleLine" />
+          <p class="blog__additionalHeading">
+            Donec a lacinia Aliquam <br />
+            sodales auctor tempor vestibulum.
+          </p>
+        </div>
+
+        <div class="blog__container blog__container--hover">
+          <h6 class="blog__date blog__date--white">06 MAY 2015</h6>
+          <hr class="blog__dateLine" />
+
+          <h5 class="blog__subtitle">
+            <a class="blog__subtitleLink blog__subtitleLink--white" href="http://demo.agnidesigns.com/candy/?p=101">MORBI DAPIBUS EROS A SOL LICITUDIN FACILISIS</a>
+          </h5>
+
+          <div class="blog__smallPostCategory">
+            <span>in</span>
+            <a class="blog__smallPostCategoryLink blog__smallPostCategoryLink--white" href="http://demo.agnidesigns.com/candy/?cat=5">Standard</a>
+            <span>&#46;</span>
+            <a class="blog__smallPostCategoryLink blog__smallPostCategoryLink--white" href="http://demo.agnidesigns.com/candy/?cat=1">Uncategorized</a>
+            <img class="blog__img" src="http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/blog_thumbnail.jpg" alt="blog-thumbnail" />
+          </div>
+        </div>
+        <hr class="blog__endLine" />
+
+        <div class="blog__container">
+          <h6 class="blog__date">06 MAY 2015</h6>
+          <hr class="blog__dateLine" />
+
+          <h5 class="blog__subtitle">
+            <a class="blog__subtitleLink" href=" http://demo.agnidesigns.com/candy/?p=99">QUISQUE ALIQUET MASSA UT LIGULA RUTRUM.</a>
+          </h5>
+
+          <div class="blog__smallPostCategory">
+            <span>in</span>
+            <a class="blog__smallPostCategoryLink" href="http://demo.agnidesigns.com/candy/?cat=7">Quote</a>
+            <span>&#46;</span>
+            <a class="blog__smallPostCategoryLink" href="http://demo.agnidesigns.com/candy/?cat=1">Uncategorized</a>
+          </div>
+        </div>
+        <hr class="blog__endLine" />
+
+        <div class="blog__container">
+          <h6 class="blog__date">06 MAY 2015</h6>
+          <hr class="blog__dateLine" />
+
+          <h5 class="blog__subtitle">
+            <a class="blog__subtitleLink" href="http://demo.agnidesigns.com/candy/?p=90">CURABITUR TRISTIQUE METUS, EU TEMPUS</a>
+          </h5>
+          <div class="blog__smallPostCategory">
+            <span>in</span>
+            <a class="blog__smallPostCategoryLink" href="http://demo.agnidesigns.com/candy/?cat=5">Standard</a>
+            <span>&#46;</span>
+            <a class="blog__smallPostCategoryLink" href="http://demo.agnidesigns.com/candy/?cat=6">Video</a>
+          </div>
+        </div>
+        <hr class="blog__endLine" />
+
+        <div class="blog__container">
+          <h6 class="blog__date">06 MAY 2015</h6>
+          <hr class="blog__dateLine" />
+
+          <h5 class="blog__subtitle">
+            <a class="blog__subtitleLink" href="http://demo.agnidesigns.com/candy/?p=101">MORBI DAPIBUS EROS A SOL LICITUDIN FACILISIS</a>
+          </h5>
+          <div class="blog__smallPostCategory">
+            <span>in</span>
+            <a class="blog__smallPostCategoryLink" href="http://demo.agnidesigns.com/candy/?cat=10">Gallery</a>
+            <span>&#46;</span>
+            <a class="blog__smallPostCategoryLink" href="http://demo.agnidesigns.com/candy/?cat=1">Uncategorized</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact__header">
+          <h2 class="contact__title">Contact</h2>
+          <p class="contact__additionalHeading">
+            Donec a lacinia mauris. Aliquam sodales <br />
+            auctor tempor vestibulum.
+          </p>
+        </div>
+
+        <form>
+          <div class="contact__input">
+            <div class="contact__inputContainer">
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email Adress" required />
+              <input type="text" placeholder="Website" />
+            </div>
+            <div class="contact__textarea">
+              <textarea name="Message" placeholder="Message" id="" cols="40" rows="15" required></textarea>
+            </div>
+          </div>
+
+          <div class="contact__button">
+            <button type="reset">RESET</button>
+            <button type="submit">SEND</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Angie's Section -->
+    <footer>
+      <div class="footer__container">
+        <ul class="footer__container--socialMedia">
+          <li class="footer__socialMedia">
+            <a class="footer__socialMediaLink" href="#facebook"> FACEBOOK</a>
+          </li>
+          <li class="footer__socialMedia">
+            <a class="footer__socialMediaLink" href=" #twitter"> TWITTER</a>
+          </li>
+          <li class="footer__socialMedia">
+            <a class="footer__socialMediaLink" href=" #behance"> BEHANCE</a>
+          </li>
+          <li class="footer__socialMedia">
+            <a class="footer__socialMediaLink" href=" #dribble"> DRIBBLE</a>
+          </li>
+        </ul>
+        <hr class="footer__socialMedia--underline" />
+        <a class="footer__copyright" href="#">TeamFinance © 2023</a>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Javascript Code -->
+  <script>
+    <!-- To enable Navigation Background Color change when scroll -->
+    const nav = document.querySelector(".nav");
+    const navLinks = document.querySelectorAll(".nav__link");
+    const navLogo = document.querySelector(".nav__logo");
+
+    const darkLogoSrc = "http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/logo.png";
+    const whiteLogoSrc = "http://demo.agnidesigns.com/candy/wp-content/uploads/2015/05/logo_lite.png";
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        // Change navbar to light background.
+        nav.classList.add("nav--light");
+        nav.classList.remove("nav--dark");
+
+        // Change logo to dark variant.
+        navLogo.src = darkLogoSrc;
+
+        // Change all links text from light to dark;
+        navLinks.forEach((link) => {
+          link.classList.add("nav__link--dark");
+          link.classList.remove("nav__link--light");
+        });
+      } else {
+        // Change navbar to dark background.
+        nav.classList.add("nav--dark");
+        nav.classList.remove("nav--light");
+
+        // Change logo to light variant.
+        navLogo.src = whiteLogoSrc;
+
+        // Change all links text from dark to light;
+        navLinks.forEach((link) => {
+          link.classList.add("nav__link--light");
+          link.classList.remove("nav__link--dark");
+        });
+      }
+    });
+
+    // Get the button:
+    let mybutton = document.getElementById("goTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</html>

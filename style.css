@@ -1,0 +1,753 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* Global/Shared CSS */
+/* ------------------------------------------------------------------------------------------------ */
+:root {
+  --primary-color: #f3f5f8;
+  --secondary-color: #ffffff;
+  --title-text-color: #000000;
+  --content-text-color: rgb(170, 170, 170);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  scroll-margin-top: 7.5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Zacque's CSS */
+/* ------------------------------------------------------------------------------------------------ */
+#goTopBtn {
+  /* Positioning related attributes */
+  display: none; /* Hidden by default */
+  position: fixed; /* Assign fixed to appear as we continue scroll down the page */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Assign a high z-index value so it will appear on top of all elements*/
+  /* Styling related attributes */
+  font-size: 1em;
+  border: none; /* Remove button borders */
+  outline: none; /* Remove button outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1em; /* Add padding */
+  border-radius: 0; /* Rounded corners */
+  background-color: white; /* Set a background color */
+}
+
+#goTopBtn:hover {
+  background-color: #dfdfdf; /* Add a light-grey background on hover */
+}
+
+.hero {
+  /* To adjust the tint applied on the background video */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hero__title {
+  display: flex;
+  color: var(--secondary-color);
+  font-size: 8em;
+}
+
+.hero__subtitle {
+  color: var(--secondary-color);
+  font-size: 4em;
+}
+
+.hero__video {
+  position: absolute;
+  /* To fully stretch out hero video */
+  min-width: 100vw;
+  min-height: 100vh;
+  /* To bring hero text on top of video */
+  z-index: -1;
+  /* To center the video when resizing window */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15em;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  min-width: 100%;
+  transition: background-color 0.5s ease-in-out;
+  letter-spacing: 0.05em;
+}
+
+.nav__logo {
+  max-width: 8em;
+  padding: 1em;
+}
+
+.nav--dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav--light {
+  background-color: var(--secondary-color);
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  padding: 2em;
+}
+
+.nav__item {
+  position: relative;
+  margin-right: 1em;
+}
+
+.nav__item > a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav__item a:hover {
+  color: #bcbcbc;
+}
+
+.nav__item--dropdown:hover .nav__dropdown {
+  display: block;
+}
+
+.nav__dropdown {
+  display: none;
+  /* Define dropdown menu positioning */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0.2em 0 0;
+  /* Define dropdown menu style */
+  padding: 0.5em;
+  list-style: none;
+  background-color: #151515;
+  border: 1px solid #222;
+}
+
+/* Define dropdown menu font color */
+.nav__dropdown a {
+  color: white;
+}
+
+/* Define dropdown menu entries margin */
+.nav__dropdown li {
+  margin: 0.5em;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #f0f0f0;
+}
+
+.nav__link--dark {
+  color: black;
+}
+
+.nav__link--light {
+  color: #f0f0f0;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  padding: 5em 0em 5em 0em;
+}
+
+.about__container {
+  width: 30em;
+  height: 15em;
+}
+
+.about__title {
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}
+
+.about__description {
+  color: var(--content-text-color);
+}
+
+.about--primary {
+  background-color: var(--primary-color);
+}
+
+.about--secondary {
+  background-color: var(--secondary-color);
+}
+
+.about--reverse {
+  flex-direction: row-reverse;
+}
+
+.about__image {
+  width: 20%;
+  height: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Sam's CSS */
+/* ------------------------------------------------------------------------------------------------ */
+#works {
+  background-color: var(--primary-color);
+}
+
+#services {
+  background-color: var(--secondary-color);
+}
+
+#team {
+  background-color: var(--primary-color);
+}
+
+/* Center the section heading */
+.section-heading {
+  padding-top: 2em;
+  text-align: center;
+}
+
+.heading-strike {
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.additional-heading {
+  font-size: 16px;
+  color: black;
+  color: var(--content-text-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.filter {
+  padding: 2em 0 2em 0;
+}
+
+/* Center the filter */
+.filter ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.filter li {
+  margin: 0 10px;
+}
+
+.filter ul li a.active {
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 3em;
+}
+
+/* Create a wrapper for the top row and apply a background image */
+.top-row-wrapper {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+/* Create a wrapper for the bottom row and apply a background image */
+.bottom-row-wrapper {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+/* Set the layout of the portfolio posts */
+.top-row-wrapper .portfolio-post,
+.bottom-row-wrapper .portfolio-post {
+  width: 25%;
+  margin: 20px 1%;
+  position: relative;
+  color: white;
+}
+
+/* Set the layout of the portfolio thumbnail */
+.portfolio-thumbnail {
+  position: relative;
+  height: 300px;
+  color: white;
+}
+
+/* Set the layout of the portfolio thumbnail image */
+.portfolio-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Set the layout of the overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay-content {
+  position: relative;
+}
+
+.overlay-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Set the hover effect on the portfolio post */
+.portfolio-post:hover .overlay {
+  opacity: 1;
+}
+
+/* Set the layout of the overlay heading */
+.portfolio-post:hover .overlay h2 {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.overlay h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Set the layout of the portfolio category */
+.portfolio-category {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.portfolio-category li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Set the layout of the portfolio title */
+.portfolio-post h3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.new.class {
+  padding: 80px 0;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/* To remove button link underline */
+.new.class a{
+  text-decoration: none;
+}
+
+.heading-underlined {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.heading-underlined::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  text-align: center;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 40px;
+  border: 2px solid #1b1b1a;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: black;
+}
+
+.flex-container {
+  padding: 10em;
+}
+
+.primary-typo {
+  font-family: "Lato", sans-serif;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.icon {
+  font-size: 100px;
+}
+
+.heading-underlined {
+  font-size: 24px; /* adjust the value to your desired font size */
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.video-frame {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.heading-underlined {
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.5em;
+}
+
+.image {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+}
+
+.caption h5,
+.caption p {
+  margin: 0;
+}
+
+.h5 {
+  color: white;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* add horizontal scrolling if necessary */
+}
+
+.member {
+  width: 25%; /* adjust as needed */
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Angie's CSS */
+/* ------------------------------------------------------------------------------------------------ */
+#blog {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px 0px;
+  padding: 50px 0 100px 0;
+}
+
+#blog a {
+  text-decoration: none;
+}
+
+.blog__title,
+.contact__title {
+  font-size: 42px;
+}
+
+.blog__titleLine {
+  border-bottom: 3px solid black;
+  width: 5%;
+  color: var(--title-text-color);
+}
+
+.blog__container {
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid red; */
+  margin: 30px 0px;
+  padding: 50px;
+  z-index: 1;
+}
+
+.blog__container--hover {
+  position: relative;
+  z-index: 1;
+  background-color: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.blog__img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: none;
+  filter: brightness(50%);
+}
+
+.blog__container--hover:hover .blog__img {
+  display: flex;
+}
+
+.blog__container--hover:hover .blog__date--white,
+.blog__container--hover:hover .blog__subtitleLink--white,
+.blog__container--hover:hover .blog__smallPostCategoryLink--white {
+  color: white;
+}
+
+.blog__additionalHeading,
+.contact__additionalHeading {
+  font-size: 20px;
+  font-weight: lighter;
+  color: var(--content-text-color);
+  line-height: 2;
+}
+
+.blog__dateLine {
+  display: flex;
+  width: 3%;
+}
+
+.blog__subtitleLink {
+  color: var(--title-text-color);
+}
+
+.blog__smallPostCategory,
+.blog__smallPostCategoryLink {
+  font-size: 13px;
+  color: var(--content-text-color);
+  margin-top: 25px;
+}
+
+.blog__endLine {
+  width: 30%;
+  color: var(--content-text-color);
+}
+
+#contact {
+  text-align: center;
+  margin: 50px 50px;
+}
+
+.contact__header/* make  contact__title to center */ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__input {
+  /*  /*when using width:100% will make the textarea box shrink not bsed on the box itself 
+      /*width: 100%; 
+  */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 50px;
+  /*  1st row-gap 60px is to separate the flex box when no wrap */
+  /* 2nd  column gap 60px is to separate the textarea box from website input box when wrap */
+  gap: 60px 60px;
+  padding: 50px 100px;
+}
+
+.contact__inputContainer {
+  display: flex;
+  flex-direction: column;
+  /* make .contact__inputContainer grow equal space with .contact__textarea*/
+  flex: 1;
+  justify-content: space-between;
+  /* to make the input box have row gap when .contact__input is flex:wrap */
+  row-gap: 30px;
+}
+
+.contact__textarea {
+  display: flex;
+  /* make .contact__textarea grow equal space with .contact__inputContainer */
+  /* when using flex :1 1 auto will make thetextarea box shrink not bsed on the box */
+  flex: 1;
+}
+
+.contact__inputContainer input,
+.contact__textarea textarea {
+  padding: 20px 20px;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.contact__textarea textarea {
+  /* take 100% width of contact__textarea */
+  width: 100%;
+  /* resize: auto; */
+}
+.contact__inputContainer input::placeholder,
+.contact__textarea textarea::placeholder {
+  color: #bebebf;
+}
+
+.contact__inputContainer input:focus,
+.contact__textarea textarea:focus {
+  /* remove the black border when click on the box */
+  outline: none;
+}
+
+.contact__button {
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+}
+
+.contact__button button {
+  padding: 12px 40px;
+  background-color: black;
+  color: var(--secondary-color);
+}
+
+.contact__button button:hover {
+  background-color: var(--secondary-color);
+  color: black;
+  cursor: pointer;
+}
+
+.footer__container {
+  background-color: var(--primary-color);
+  padding: 50px 0 100px;
+  margin: 30px 0 0 0;
+}
+.footer__container--socialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  justify-content: center;
+}
+.footer__socialMedia {
+  padding: 20px 20px;
+  list-style-type: none;
+  font-size: smaller;
+}
+
+.footer__socialMediaLink {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.footer__socialMedia--underline {
+  width: 5%;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: var(--content-text-color);
+  font-size: small;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Media Query CSS
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 600px) {
+  .nav__list {
+    display: none;
+  }
+}
