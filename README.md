@@ -18,6 +18,7 @@ For the layout/look and feel, we have took reference from the portfolio website 
 - Zoom Recording URL: https://youtu.be/GEHKhj2-jvs
 - GitHub page URL: https://github.com/zacqueleong/Sigma-Buddy-Project-1
 - Deployed GitHub page URL: https://zacqueleong.github.io/sigma-buddy-project-1/
+- Project Task Breakdown: https://app.eraser.io/workspace/JvkqoukJO3f1plWpdHC7?origin=share
 
 ### Q & A :
 
