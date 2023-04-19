@@ -16,13 +16,13 @@ Links:
 - GitHub page URL: https://github.com/zacqueleong/Sigma-Buddy-Project-1
 - Deployed GitHub page URL: https://zacqueleong.github.io/sigma-buddy-project-1/
 
-####################################################### 
+#######################################################
 Q & A :
 ####################################################### 
 
 1. What parts were you in charge of?
 
-####################################################### 
+#######################################################
 [Zacque]
 - Navigation Bar
 Include dropdown list options
@@ -51,7 +51,7 @@ Include Submit And Reset Button
 
 - Footer
 
-####################################################### 
+#######################################################
 
 2. Explain the feature you are most proud of. What techniques/methods you've used?
 
@@ -68,11 +68,11 @@ Using Html & CSS , i am glad that overlay and flexbox work . Understand more how
 [Angie]
 Most proud of display blog image behind the text, I thought have to use css animation originally to display the image behind the text, after I search online only realise z-index can make the effect .
 
-####################################################### 
+#######################################################
 
 3. Name one coding struggle and how you dealt with it.
 
-####################################################### 
+#######################################################
 
 [Zacque]
 I struggled with maintaining class names during the project, that prompted me to search for best practices and i discovered BEM (Block Element Modifer) class naming convention. 
@@ -89,7 +89,7 @@ I thought when I set display:flex at contact__input, the contact__inputContainer
 
 After that I fix that with adding flex:1 to contact__inputContainer and contact__textarea.
 
-####################################################### 
+#######################################################
 
 4. Name one improvement you would like to work on.
 
